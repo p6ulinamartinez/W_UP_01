@@ -79,3 +79,11 @@ The p value of 0.0000009421 is so small that its very strong evidence against th
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
+$H_0$ = There is no difference in pushs-ups based on positions
+$H_0$ = There is a difference in pushups based on positions 
+
+With assistence from chatgpt I was able to write some R code to create a box plot.
+
+Also, By using the numerical-Cat tool i was able to perform a T test and a summary of the Data (favstats).
+
+The box plot in onjuction with the summary and T test show that we can reject the $H_0$ leaving only the $H_0$
