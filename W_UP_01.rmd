@@ -52,6 +52,13 @@ basicCN <- ggplot(mydata,aes(x=position,y=pushups))
 ```{r}
 basicCN + geom_boxplot(notch=FALSE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
+I'm looking at the columns in the chart above, the left are the line positions. and on the right are the skilled positions.
+
+The height of the skilled box is much higher.
+
+The 25th Percentile on the skilled lavers is higher than the 75th Percentile of the line players.
+
+This seems to indicate that skilled positions can do more push-ups than line positions.
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
