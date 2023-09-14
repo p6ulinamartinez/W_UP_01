@@ -1,7 +1,7 @@
 ---
 title: "W_UP_01"
 author: "Paulina Martinez"
-date: "fall 2020"
+date: "fall 2023"
 output: html_document
 ---
 
@@ -40,7 +40,18 @@ $H_A$: The average number of pushups done by line players is statistically diffe
 ### Graphical Descriptive Results
 
 <!--Graphical results here. Make sure to show your code. Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too. Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+### Plot boxplots
 
+```{r}
+basicCN <- ggplot(mydata,aes(x=position,y=pushups))
+```
+## Now add in boxplot
+
+### get fancy  
+
+```{r}
+basicCN + geom_boxplot(notch=FALSE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
+```
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
